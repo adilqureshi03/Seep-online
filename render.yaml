@@ -1,0 +1,10 @@
+# Render Blueprint — deploy with one click after pushing this repo to GitHub
+services:
+  - type: web
+    name: seep-online
+    runtime: node
+    plan: free
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
